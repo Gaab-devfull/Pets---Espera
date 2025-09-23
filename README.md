@@ -36,4 +36,4 @@ Gabriel Vinícius
 📧 gabriel.tecads@gmail.com
 📍 São Paulo/SP
 📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+Este projeto está sob a licença MIT.
