@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets à Espera - Adotar</title>
+    <link rel="stylesheet" href="style/style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Pets à Espera</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="adotar.html">Adotar</a></li>
+                <li><a href="doar.html">Doar</a></li>
+                <li><a href="ajudar.html">Ajudar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="adotar"><!--mensagem informativa-->
+            <h2>Adotar um Pet</h2>
+            <p>
+                Encontre aqui o seu novo melhor amigo! Nossa plataforma reúne diversos 
+                pets amorosos que estão à espera de um lar. Use a busca para encontrar 
+                o companheiro ideal:
+            </p>
+
+            <section class="busca"><!--lupa de busca de animais-->
+                <form action="#">
+                    <input type="text" placeholder="Buscar por nome, espécie...">
+                    <select>
+                        <option value="">Todas Espécies</option>
+                        <option value="cao">Cão</option>
+                        <option value="gato">Gato</option>
+                        <option value="aves">Aves</option>
+                    </select>
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+
+            <section class="animais">
+                <h2>Pets Disponíveis para Adoção</h2>
+                     <div class="lista-pets">
+                        <p class="mensagem-nenhum-pet">Nenhum pet encontrado.</p>
+                    </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+        <!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>

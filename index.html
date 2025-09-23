@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets à Espera</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>     
+        <div class="img"> <!--imagem superior do dalmata-->          
+            <h1>  
+                <img src="img/dalmata.png" alt="img1">
+                Pets à Espera!   
+            </h1>  
+        </div>
+
+        <nav> <!--menu superior-->
+            <ul>
+              <li><a href="quemsomos.html">Quem Somos</a></li>
+              <li><a href="adotar.html">Adotar</a></li>
+              <li><a href="doar.html">Doar</a></li>
+              <li><a href="ajudar.html">Ajudar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contador de pets adotados -->
+        <section class="contador">
+            <h2>🐾 Total de pets adotados: <span id="contador-adotados">0</span></h2>
+        </section>
+
+        <section class="nova-publicacao"> <!--formulário para o usuário fazer postagens de animais-->
+            <h2>Anuncie um Pet para Doação</h2>
+            <form id="form-publicacao" action="#">
+                <input type="text" id="nomePet" placeholder="Nome do Pet" required>
+                <select id="especiePet" required>
+                    <option value="">Espécie</option>
+                    <option value="cao">Cão</option>
+                    <option value="gato">Gato</option>
+                    <option value="aves">Aves</option>
+                </select>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <input type="text" id="cidade" placeholder="Sua Cidade" required>
+                <input type="tel" id="telefone" placeholder="Seu Telefone" required>
+                <input type="text" id="descricao" placeholder="Descrição (opcional)">
+                <input type="file" id="imagens" accept="image/*" multiple>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+
+        <section class="busca"> <!--função para busca filtrada de animais-->
+            <h2>Encontre um Pet</h2>
+            <form action="#">
+                <input type="text" placeholder="Buscar por nome, espécie...">
+                <select>
+                    <option value="">Todas Espécies</option>
+                    <option value="cao">Cão</option>
+                    <option value="gato">Gato</option>
+                    <option value="aves">Ave</option>
+                    <option value="aves">Marinho</option>
+                    <option value="aves">Réptil</option>
+                    <option value="aves">Grande Porte</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="animais"> <!--mensagem de aviso de falta de animais, o site está sem banco de dados-->
+            <h2>Pets Disponíveis</h2>
+            <div class="lista-pets">
+                <p class="mensagem-nenhum-pet">Nenhum pet encontrado.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Todos os direitos reservados © 2025</p>
+    </footer>
+
+    <!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
