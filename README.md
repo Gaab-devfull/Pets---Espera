@@ -26,7 +26,7 @@ Site para divulgação e adoção de animais, desenvolvido com HTML, CSS e JavaS
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/pets-a-espera.git
+   git clone https://github.com/gaab-devfull/pets---espera.git
 2. Abra o projeto no VS Code
 3. Configure as chaves do Supabase no script.js
 4. Abra o index.html no navegador
